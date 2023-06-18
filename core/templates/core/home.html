@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/pic.jpg' %}" alt="ProfilePic" class="img-thumbnail" height="150px"
+            width="250px">
+
+    </div>
+    <div class="text-white mt-5 mx-5 text-justify ">
+        <h1 class="font-weight-bold st-font">Hello</h1>
+        <div>
+            <p>
+                I Hope you are doing well., I am writing to inquire about any potential job opportunities that may have been available in your organization.I have completed a degree in BCA and I am eager to apply the knowledge and skills I have acquired with my background and experience in my last job.I am confident  that I can make a positive  contribution to your organization.</p>
+                
+                
+                <p>I have created this resume highlighting my qualifications and professional  experience. It would be great if you take the time to review my credentials and consider me for this position.</p>
+                
+                
+                <p>I can be contacted at kneha5489@gmail.com if you have any questions or require additional information. Thank you for your time and consideration and I look forward to hearing from you soon. 
+                            </p>
+        </div>
+    </div>
+    <div class="text-center">
+<a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>    
+<a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>    
+
+</div>
+</div>
+{% endblock content %}
